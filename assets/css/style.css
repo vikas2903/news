@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --primary-font:  "Oxygen", sans-serif;
+    --secondry-font: "Arimo", sans-serif;
+    --primary-color: #000;
+    --secondry-color: #000;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.html {
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+}
+
+
+
+
+/* ######################################### */
+
+.hero-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.hero-wrapper {
+    width: 60%;
+}
+.hero-item {
+    position: relative;
+}
+.hero-item a {
+    font-family: 'Oxygen';
+    color: #fff;
+    margin-top: 10px;
+}
+.hero-item p{
+    font-family: 'Oxygen';
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.hero-decs {
+    position: absolute;
+    bottom: 10px;
+    max-width: 90%;
+    padding: 0 20px 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.hero-item h3 {
+    font-size: 20px;
+    font-family: 'Oxygen';
+    font-weight: 500;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 10px;
+    background: #24262b;
+    position: relative;
+}
+.copy-left p, .copy-right a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+    font-family: 'Oxygen';
+}
+
+.copyright:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    height: .1px;
+    width: 100%;
+    background: #ffffff40;
+    top: -11px;
+    max-width: 100%;
+    margin: auto;
+}
+.copy-right a{
+    margin: 0 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.hero-slider-right img {
+    width: 100%;
+    height: 100%;
+}
+.hero-slider-right {
+    width: 40%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+section.hero_slider {
+    display: flex;
+    gap: 10px;
+}
+.hero-right-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    grid-gap: 10px;
+}
