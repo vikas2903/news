@@ -524,7 +524,7 @@ h2.sec-heading span{color:blue;}
 }
 
 article {
-	height: 40vh;
+/* 	height: 40vh; */
 	background: #fff;
 	font-family: "Oswald", sans-serif;
 }
