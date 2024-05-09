@@ -372,3 +372,8 @@ a.lf-img img {
     grid-row-start: 1;
     grid-column-start: 2;
 }
+a:hover h4 {
+    cursor: pointer;
+    color: #e0570c;
+    transition: all .2s ease-out;
+}
