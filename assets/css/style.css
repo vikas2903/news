@@ -498,3 +498,10 @@ a {
     margin:0% 3%;
     }
     }
+.content-list-item:nth-child(1) {
+    display: grid;
+}
+
+.content-list-item {
+    display: none;
+}
