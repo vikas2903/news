@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --pf : "Newsreader", serif;
+    --pf :"Noto Sans", sans-serif;
     --sf:"Oxygen", sans-serif;
     --tf:"Montserrat", sans-serif;
 }
@@ -44,7 +44,7 @@ nav ul {
 }
 
 li.navlink a {
-    font-family: Newsreader;
+    font-family: var(--pf);
     font-size: 19px;
     color: #000;
     font-weight: 500;
@@ -60,7 +60,7 @@ li.navlink a {
     max-width: 76px;
     min-height: 31px;
     min-width: 76px;
-    font-family: Newsreader;
+    font-family: var(--pf);
     transition: background .2s ease-in-out;
     letter-spacing: .5px;
     font-size: 16px;
@@ -207,12 +207,12 @@ img{
     font-weight: 600;
     line-height: normal;
     font-size: 18px;
-    font-family: 'Newsreader';
+    font-family: 'var(--pf)';
 }
 
 
 .headeing {
-    font-family: Newsreader;
+    font-family: var(--pf);
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 15px;
@@ -306,7 +306,7 @@ a.lf-img img {
     display: -webkit-box;
     font-size: 16px;
     overflow: hidden;
-    font-family: 'Newsreader';
+    font-family: 'var(--pf)';
     width: calc(100% - 10px);
     line-height: 18px;
     font-weight: 600;
@@ -371,9 +371,130 @@ a.lf-img img {
     grid-row-end: 5;
     grid-row-start: 1;
     grid-column-start: 2;
+    padding-top: 0px !important;
 }
-a:hover h4 {
+a {
     cursor: pointer;
-    color: #e0570c;
-    transition: all .2s ease-out;
 }
+.sectwo-b h4{font-family: var(--pf);}
+
+.tabber-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 40px;
+    padding-top: 30px;
+}
+.tabber-wrapper  .tabber-left {
+    flex-basis: 20%;
+}
+.tabber-wrapper  .tabber-right{flex-basis: 80%;}
+.content-list-item {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.tabber-list {
+    display: flex;
+    border-right: 1px solid #eee;
+    flex-direction: column;
+    gap: 20px;
+}
+.tabber-list span:hover{
+    background: #fff;
+    border: 1px solid #eee;
+    color: #000;
+}
+.tabber-list span {
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--pf);
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: .5rem;
+    display: inline-block;
+    max-width: 157px;
+    padding: 4px;
+    text-transform: uppercase;
+}
+
+    
+    .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    font-family: 'Noto Sans';
+    }
+    
+    .footer .row a{
+        text-decoration: none;
+        color: gray;
+        transition: 0.5s;
+  
+    }
+    .footer .row ul li a{
+        text-decoration: none;
+        color: gray;
+        transition: 0.5s;
+        font-size: 16px;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    .row.floating-social-icon {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        background: #fff;
+        padding:25px 15px;
+        border-radius: .5rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        transform: translateY(-50%);
+    }
+    .row.floating-social-icon a:hover {
+        color: #000;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
