@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.content-list .content-list-item:nth-child(1) {
+    display: inline-block;
+}@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --pf :"Noto Sans", sans-serif;
     --sf:"Oxygen", sans-serif;
@@ -509,4 +512,7 @@ a {
     width: 30%;
     display: inline-block;
     margin: 10px;
+}
+.content-list .content-list-item:nth-child(1) {
+    display: inline-block;
 }
