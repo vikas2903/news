@@ -505,3 +505,8 @@ a {
 .content-list-item {
     display: none;
 }
+.sectytwo-list-t {
+    width: 30;
+    display: inline-block;
+    margin: 10px;
+}
