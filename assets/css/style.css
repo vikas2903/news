@@ -5,7 +5,9 @@
     --sf: "Oxygen", sans-serif;
     --tf: "Montserrat", sans-serif;
 }
-
+.news_header_mobile_menu {
+    display: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -783,6 +785,9 @@ section.news-blogs img {
     nav {
         display: none;
     }
+    .news_header_mobile_menu {
+    display: block;
+}
     nav ul {
         gap: 8px;
         flex-direction: column;
