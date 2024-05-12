@@ -815,7 +815,7 @@ section.news-blogs img {
         line-height: 40px;
     }
     nav {
-        display: none;
+        
         background: linear-gradient(180deg, #fff, #f9f2eb 70%);
         height: calc(100vh - 49px);
         left: 0;
